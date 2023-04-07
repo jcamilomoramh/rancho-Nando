@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Opción 1</title>
+    <style>
+      nav {
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+      }
+
+      nav li {
+        margin-right: 1rem;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .section {
+        display: none;
+        padding: 1rem;
+      }
+
+      .section.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" data-target="section1">Aperitivos</a></li>
+        <li><a href="#" data-target="section2">Calentados</a></li>
+        <li><a href="#" data-target="section3">Postres</a></li>
+        <li><a href="#" data-target="section4">Bebidas</a></li>
+      </ul>
+    </nav>
+    
+    <div id="section1" class="section">
+      <h2>Aperitivos</h2>
+      <p>Contenido de la sección de aperitivos.</p>
+    </div>
+    
+    <div id="section2" class="section">
+      <h2>Calentados</h2>
+      <p>Contenido de la sección de calentados.</p>
+    </div>
+    
+    <div id="section3" class="section">
+      <h2>Postres</h2>
+      <p>Contenido de la sección de postres.</p>
+    </div>
+    
+    <div id="section4" class="section">
+      <h2>Bebidas</h2>
+      <p>Contenido de la sección de bebidas.</p>
+    </div>
+
+    <script>
+      const links = document.querySelectorAll('nav a');
+
+      for (const link of links) {
+        const targetId = link.getAttribute('data-target');
+        const target = document.getElementById(targetId);
+
+        link.addEventListener('click', e => {
+          e.preventDefault();
+
+          for (const section of document.querySelectorAll('.section')) {
+            section.classList.remove('active');
+          }
+
+          target.classList.add('active');
+        });
+      }
+    </script>
+  </body>
+</html>

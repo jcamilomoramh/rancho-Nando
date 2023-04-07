@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #ffffff;
+}
+
+/* Estilos para el ícono del Menú */
+.icono-menu{
+  margin: 40px 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.icono-menu img{
+  vertical-align: top;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor del Menú */
+.cont-menu{
+  background-color: rgb(42,42,42);
+  box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s ease;
+}
+

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+}
+
+/* Estilos para el ícono del Menú */
+.icono-menu{
+    margin: 20px 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.icono-menu img{
+    vertical-align: top;
+    width: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Estilos para el contenedor del Menú */
+.cont-menu{
+    background-color: rgb(42,42,42);
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+/* Estilos por agregar en JavaScript */
+.active{
+    transform: translate(-600px);
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42);
+}
+nav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  nav li {
+    margin-right: 1rem;
+    width: max-content;
+
+  }
+  nav li:hover {
+    border-bottom: #000000 solid;
+  }
+
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .section {
+    display: none;
+    padding: 1rem;
+  }
+
+  .section.active2 {
+    display: block;
+  }
