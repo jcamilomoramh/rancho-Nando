@@ -84,9 +84,9 @@ const products = [
   image: "img/arepas.jpeg"
  },  
  { name: "Arepa De Maiz Blanca", 
-    name2:"Con pollo | With Chicken Breast",
+    name2:"Con pollo",
     price: 10.99, isNew: false, 
-    name3:"Con carne | With Grilled Steak",
+    name3:"Con carne",
     price2: 12.99, 
     isNew: false,
     image: "img/arepas.jpeg"
