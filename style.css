@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@100;300&family=Roboto+Mono:wght@100&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: #ffffff;
+    background-color: #f7f7f7;
 }
 
 /* Estilos para el ícono del Menú */
@@ -23,14 +24,14 @@ body{
 
 /* Estilos para el contenedor del Menú */
 .cont-menu{
-    background-color: rgb(42,42,42);
-    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
-    width: 400px;
-    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.265);
+    width: 100%;
+    height: 200vh;
     position: absolute;
     top: 0;
     left: 0;
     transition: all .5s ease;
+    z-index: 1;
 }
 
 /* Estilos por agregar en JavaScript */
@@ -40,17 +41,27 @@ body{
 
 /* Estilos para el listado del Menú */
 .cont-menu ul{
-    padding: 100px 0px 20px 0px;
+    padding: 140px 0px 20px 0px;
     list-style: none;
+    background: black;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(111 72 37);
 }
-
-.cont-menu ul li{
+.cont-menu ul:hover{
+    
+}
+.cont-menu ul a{
     color: white;
     display: block;
-    font-size: 25px;
+    font-size: 23px;
     text-decoration: none;
-    padding: 10px 50px;
     cursor: pointer;
+    padding-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cont-menu ul li:hover{
@@ -58,12 +69,12 @@ body{
     color: rgb(42,42,42);
 }
 nav {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 20px;
+    padding: 10px;
   }
 
   nav ul {
@@ -73,24 +84,28 @@ nav {
   }
 
   nav li {
-    margin-right: 1rem;
     width: max-content;
-
+    font-family: 'Montserrat', sans-serif;
   }
   nav li:hover {
     border-bottom: #000000 solid;
+    background-color: rgb(89, 43, 3);
+    color: #f7f7f7;
   }
 
   nav a {
     color: #000000;
     text-decoration: none;
-    padding: 0.5rem 1rem;
     border-radius: 0.25rem;
+    display: flex;
+    height: 30px;
   }
 
   nav a:hover,
   nav a:focus {
     background-color: rgba(255, 255, 255, 0.2);
+    color: #f7f7f7;
+    
   }
 
   .section {
@@ -100,4 +115,35 @@ nav {
 
   .section.active2 {
     display: block;
+  }
+
+  .logo {
+    width: 160px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+
+  .typeFood{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.publish{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+  }
+  .publish img{
+    width: 80%;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 2980px) {
+    .active {
+        transform: translate(-2000px);
+    }
+    
   }
