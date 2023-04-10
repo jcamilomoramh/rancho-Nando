@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Menú Rancho Nando</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/whatsapp.css">
 </head>
 <body>
     <div class="icono-menu">
@@ -33,7 +34,7 @@
           <li><a href="#" data-target="section3">Ceviches</a></li>
           <li><a href="#" data-target="section4">SIGNATURE Steaks</a></li>
           <li><a href="#" data-target="section5">Picadas Nando</a></li>
-          <li><a href="#" data-target="section6">ENSALADAS</a></li>
+          <li><a href="#" data-target="section6">Ensaladas</a></li>
           <li><a href="#" data-target="section7">BURGERS</a></li>
           <li><a href="#" data-target="section8">ANTOJITOS</a></li>
 
@@ -54,7 +55,21 @@
             </div>
                 <div id="container2"></div>
           </div>
-   
+          <a id="whatsapp-button" href="javascript:void(0);">&#x1F4AC;</a>
+          <form id="whatsapp-form" style="display:none;">
+            <label for="mesa">Mesa:</label>
+            <input type="number" id="mesa" name="mesa" required>
+            <label for="opciones">Opciones:</label>
+            <select id="opciones" name="opciones" required>
+              <option value="">Seleccione una opción</option>
+              <option value="Opción 1">Opción 1</option>
+              <option value="Opción 2">Opción 2</option>
+              <option value="Opción 3">Opción 3</option>
+              <option value="Opción 4">Opción 4</option>
+            </select>
+            <button type="submit">Enviar mensaje</button>
+    <script src="assets/js/whatsapp.js"></script>              
+    <script src="assets/js/products.js"></script>
     <script src="app.js"></script>
     <script>
         const links = document.querySelectorAll('nav a');

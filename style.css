@@ -26,7 +26,7 @@ body{
 .cont-menu{
     background-color: rgba(0, 0, 0, 0.265);
     width: 100%;
-    height: 200vh;
+    height: 30vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,16 +36,16 @@ body{
 
 /* Estilos por agregar en JavaScript */
 .active{
-    transform: translate(-600px);
+    transform: translate(0px,-500px);
 }
 
 /* Estilos para el listado del Menú */
 .cont-menu ul{
-    padding: 140px 0px 20px 0px;
+    padding: 40px 0px 20px 0px;
     list-style: none;
     background: black;
     height: 100%;
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,6 +86,11 @@ nav {
   nav li {
     width: max-content;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid black 0.5px;
+    border-bottom: solid black 0.5px;
   }
   nav li:hover {
     border-bottom: #000000 solid;
@@ -153,107 +158,4 @@ nav {
 
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Roboto+Mono:wght@100&display=swap');
-
-#container,#container2{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 30px;
-
-}
-.product {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 10px;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  border: solid 0.05px rgba(128, 128, 128, 0.374);
-}
-.product h4 {
-  font-family: 'Montserrat', sans-serif;
-  color: brown;
-  max-width: 100%;
-  margin-bottom: 10px;
-}
-.product p {
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(0, 0, 0);
-  max-width: 100%;
-  margin-bottom: 10px;
-}
-
-
-.product img {
-  max-width: 100%;
-  margin-bottom: 10px;
-}
-
-.name-price-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.name-container {
-  display: flex;
-  flex-direction: column;
-}
-.price-container {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.new {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 50px;
-  height: 50px;
-}
-.typeFood{
-  display: flex;
-  margin-left: 30px;
-}
-
-nav {
-  display: flex;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-nav li {
-  margin-right: 1rem;
-}
-
-nav a {
-  color: black;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-}
-
-nav a:hover,
-nav a:focus {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.section {
-  display: none;
-  padding: 1rem;
-}
-
-.section.active {
-  display: block;
-}
+  

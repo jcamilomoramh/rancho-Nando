@@ -1,0 +1,56 @@
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  #whatsapp-button:hover {
+    text-decoration: none;
+    background-color: #128c7e;
+  }
+  #whatsapp-form {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  #whatsapp-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  #whatsapp-form input[type=number], #whatsapp-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #whatsapp-form button {
+    background-color: #25d366;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  #whatsapp-form button:hover {
+    background-color: #128c7e;
+  }
